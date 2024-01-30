@@ -54,7 +54,7 @@
     <section class="jumbotron text-center">
       <img src="img/pp6.jpg" alt="Gambar Hikma Taufik" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4" style="font-family: Arabic typsetting">Taufik</h1>
-      <p class="lead" style="font-family: Arabic typsetting">Information Techonolgy</p>
+      <p class="lead" style="font-family: Arabic typsetting"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -178,7 +178,7 @@
 
     <!-- Contact -->
     <section id="contact">
-      <div class="contaier">
+      <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Contact Me</h2>
@@ -233,6 +233,17 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Information Techonolgy" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
     </script>
 
     <script>
