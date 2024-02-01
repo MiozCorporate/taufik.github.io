@@ -166,6 +166,40 @@
           </div>
         </div>
       </div> -->
+
+      <section id="hobi">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Hobbies</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3" data-aos="fade-right" data-aos-duration="1000">
+              <div class="hobi-box">
+                <h4 class="hobi-name">Read Quran</h4>
+                <img src="img/hobi/r9.png" alt="joystik" class="hobi-img" />
+                <a href="#" class="btn btn-light hobi-detail-button">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+              <div class="hobi-box">
+                <h4 class="hobi-name">Gitar</h4>
+                <img src="img/hobi/r8.png" alt="joystik" class="hobi-img" />
+                <a href="#" class="btn btn-light hobi-detail-button">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <div class="hobi-box">
+                <h4 class="hobi-name">Game Online</h4>
+                <img src="img/hobi/r1.png" alt="joystik" class="hobi-img" />
+                <a href="#" class="btn btn-light hobi-detail-button">Show detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -275,6 +309,14 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".hobi-box"), {
+        max: 25,
+        speed: 400,
       });
     </script>
   </body>
